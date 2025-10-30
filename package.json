@@ -1,0 +1,26 @@
+{
+  "name": "naruto-api",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de ninjas e aldeias",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch -r dotenv/config server.js",
+    "start": "node -r dotenv/config server.js",
+    "db": "node -r dotenv/config ./src/model/index.js"
+  },
+  "keywords": [
+    "naruto",
+    "api",
+    "rest",
+    "ninja",
+    "aldeia"
+  ],
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "@sequelize/core": "^7.0.0-alpha.41",
+    "@sequelize/mysql": "^7.0.0-alpha.41",
+    "bcrypt": "^6.0.0"
+  }
+}
