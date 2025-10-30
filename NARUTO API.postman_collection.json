@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "a2f85ef0-fecf-43fd-938f-f28d8ac412de",
+		"name": "NARUTO API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38653480"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "AUTH USER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CRIAR USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\": \"Naruto Uzumaki\",\r\n \"email\": \"naruto@teste.com\",\r\n \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NINJAS",
+			"item": [
+				{
+					"name": "CRIAR NINJA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH NINJA",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "e20ad7004762672cddf6912d66068aa4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\": \"Sasuke Haruno Uchiha\",\r\n \"city\": \"Konoha no Sato\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/ninja/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ninja",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE NINJA",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "e20ad7004762672cddf6912d66068aa4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/ninja/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ninja",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET UM NINJA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ninja/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ninja",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET NINJAS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/ninja/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"ninja",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
